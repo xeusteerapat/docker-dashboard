@@ -20,7 +20,9 @@ export class DockerService {
   private client: AxiosInstance;
 
   constructor(
-    options: DockerApiOptions = { socketPath: '/var/run/docker.sock' }
+    options: DockerApiOptions = {
+      socketPath: process.env.DOCKER_SOCKET_PATH as string,
+    }
   ) {
     this.client = axios.create({
       socketPath: options.socketPath,
