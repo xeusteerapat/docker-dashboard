@@ -1,5 +1,5 @@
-import { FastifyPluginAsync } from 'fastify';
-import { Container, Image, Volume } from '../types/docker.ts';
+import type { FastifyPluginAsync } from 'fastify';
+import type { Container, Image, Volume } from '../types/docker.ts';
 
 interface ContainerParams {
   id: string;

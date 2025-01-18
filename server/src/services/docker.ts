@@ -1,6 +1,7 @@
 // src/services/docker.ts
-import axios, { AxiosInstance, AxiosError } from 'axios';
-import {
+import axios from 'axios';
+import type { AxiosInstance, AxiosError } from 'axios';
+import type {
   Container,
   ContainerState,
   Image,
